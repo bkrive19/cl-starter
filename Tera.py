@@ -14,6 +14,42 @@ print ("In a dimension filled with organic materials that your race can eat. You
 print('But then one day...')
 print("A rip was revealed in your world. This rip is something that'll change your race's way of living FOREVER.")
 print("You see Teragates gathering around this dimensional rip...")
+killpoint......
+
+def k2():
+    print(" ")
+    print("You move on. You're now exploring in the forest. You see another person, but they see you! They are scared- will you eat her, or spare her?")
+    answer = input ("Kill, or spare?")
+    if answer =="kill":
+        print("You killed her. She's screaming in fear. It tastes so good- you gained some short claws")
+        killpoint + 1
+        pass
+        k3()
+        pass
+    elif answer == "spare":
+        print ("You show a gesture of mercy. She is very suprised that you have some emotion. She takes a picture and some notes, but she heard someone calling her name for help- she run off and you follow.")
+        k3()
+        pass
+
+
+def k1():
+    print(" ")
+    print ("You see an animal, but it looks smart- if not maybe as smart as you.")
+    print ("You realize eating from a new dimension makes you stronger. The person doesn't see you...")
+    answer = input ("Do you want to kill him??? Kill or don't kill? ")
+    if answer =="kill":
+        print("You killed the person. You can see it's pain and fear- it taste good. You gained some teeth.")
+        killpoint + 1
+        pass
+        k2()
+        
+    elif answer == "don't kill":
+        print ("You spared the being. You just spectated it- he's picking up a little girl from a cabin. You feel like you made a right choice.")
+        k2()
+        
+    else:
+        print("kill or don't kill!")
+        k1()
 
 def firstbite():
     print(" ")
@@ -22,9 +58,17 @@ def firstbite():
     print("Your out! There's a lot of organic material- like in your world, but green and delicate, more alive. You realize that your're a ghost..")
     print(" ")
     answer = input ("You see a slow animal and a berry bush. Will you perfer a plant, or an easy meat meal?")
-    if answer == "meat"
-    print ("You ate the animal alive. You start to gain mass- your----------------")
-
+    if answer == "meat":
+        print ("You ate the animal alive. You start to gain mass- your ghost forms a skeleton and fresh flesh for your new body!")
+        k1()
+        
+    elif answer == "plant":
+        print("You ate the berries. Your ghost forms a skeleton and some fresh flesh around your hip and head.")
+        k1()
+        
+    else:
+        print("plant, or meat. Eat, so you can materialize!")
+        firstbite()
 
 
 def rip():
