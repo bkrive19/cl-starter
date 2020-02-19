@@ -15,8 +15,8 @@ print('But then one day...')
 print("A rip was revealed in your world. This rip is something that'll change your race's way of living FOREVER.")
 print("You see Teragates gathering around this dimensional rip...")
 
-def killpoint():
-    x=0
+
+
 
 
 def k4():
@@ -27,8 +27,8 @@ def k4():
     if answer =="kids":
         print("You consumed all of them- very quick. Your body reinforeces its self. You've grown stronger. You decide to kill the Teragate as well")
         print("His shock and fear taste just as good as the kids!")
-        killpoint() +=4
-        print(x)
+        killpoint+=4
+        print(killpoint)
         end()
         pass
     elif answer =="teragate":
@@ -47,8 +47,8 @@ def k3():
     answer = input (" Will you kill him or will you help him? eat, or help?")
     if answer =="kill":
         print("You killed the little thing- his screams and fear taste so good! You feel very strong.")
-        killpoint() +=1
-        print(x)
+        killpoint+=1
+        print(killpoint)
         k4()
         
     elif answer == "help":
@@ -62,13 +62,14 @@ def k3():
 
 
 def k2():
+    killpoint = killpoint
     print(" ")
     print("You move on. You're now exploring in the forest. You see another person, but they see you! They are scared- will you eat her, or spare her?")
     answer = input ("Kill, or spare?")
     if answer =="kill":
         print("You killed her. She's screaming in fear. It tastes so good- you gained some short claws. Later you hear a child calling for help")
-        killpoint() += 1
-        print (x)
+        killpoint+=1
+        print(killpoint)
         k3()
         
     elif answer == "spare":
@@ -80,14 +81,15 @@ def k2():
 
 
 def k1():
+    killpoint = 0
     print(" ")
     print ("You see an animal, but it looks smart- if not maybe as smart as you.")
     print ("You realize eating from a new dimension makes you stronger. The person doesn't see you...")
     answer = input ("Do you want to kill him??? Kill or don't kill? ")
     if answer =="kill":
         print("You killed the person. You can see it's pain and fear- it taste good. You gained some teeth.")
-        killpoint() += 1
-        print (x)
+        killpoint+=1
+        print(killpoint)
         k2()
         
     elif answer == "don't kill":
