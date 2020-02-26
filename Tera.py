@@ -15,11 +15,25 @@ print('But then one day...')
 print("A rip was revealed in your world. This rip is something that'll change your race's way of living FOREVER.")
 print("You see Teragates gathering around this dimensional rip...")
 
+killpoint= 0
 
+def goodend():
+    pass
 
-
+def end():
+    global killpoint
+    if killpoint == 7:
+        badend()
+        pass
+    elif killpoint < 7:
+        mixend()
+        pass
+    elif killpoint == 0:
+        goodend()
+        pass
 
 def k4():
+    global killpoint
     print(" ")
     print("The Teragate looks really mad that you took the child, so he runs off- but you hear more screaming, so you followed the screaming")
     print("You manage to reach the Teragates prey. They are all little kids. You and the Teragate are staring at eachothers eyes- he looks as strong as you.")
@@ -33,7 +47,7 @@ def k4():
         pass
     elif answer =="teragate":
         print("You have a brawl with him. You took three blows- you returned the punches. You're leaking red liquid- so is the Teragate...")
-        print("Finally- your so close to dieing, but you killed one of your kind to save the kids. You realized that they all ran off while you were fighting...")
+        print("Finally- your so close to dying, but you killed one of your kind to save the kids. You realized that they all ran off while you were fighting...")
         end()
         pass
     else:
@@ -41,10 +55,11 @@ def k4():
         k4()
 
 def k3():
+    global killpoint
     print(" ")
     print("You hear a child's voice screaming for help- you start to run towards it while avoiding the main public path.")
     print("There is a little boy running from another Teragate- He's running towards your direction.")
-    answer = input (" Will you kill him or will you help him? eat, or help?")
+    answer = input (" Will you kill him or will you help him? kill, or help?")
     if answer =="kill":
         print("You killed the little thing- his screams and fear taste so good! You feel very strong.")
         killpoint+=1
@@ -62,7 +77,7 @@ def k3():
 
 
 def k2():
-    killpoint = killpoint
+    global killpoint
     print(" ")
     print("You move on. You're now exploring in the forest. You see another person, but they see you! They are scared- will you eat her, or spare her?")
     answer = input ("Kill, or spare?")
@@ -81,7 +96,7 @@ def k2():
 
 
 def k1():
-    killpoint = 0
+    global killpoint
     print(" ")
     print ("You see an animal, but it looks smart- if not maybe as smart as you.")
     print ("You realize eating from a new dimension makes you stronger. The person doesn't see you...")
