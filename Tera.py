@@ -17,20 +17,56 @@ print("You see Teragates gathering around this dimensional rip...")
 
 killpoint= 0
 
+def badend():
+    print(" ")
+    print("You've killed everyone in your way...")
+    print("You're very stong now. Everyone fears you...no one was able to stop you...")
+    print("From now on, the world will never be the same.")
+    from pyfiglet import Figlet
+
+    fig = Figlet(font='graffiti')
+    banner = fig.renderText("Fear The New Me")
+
+    print(banner)
+
+
+def mixend():
+    print(" ")
+    print("You've spared and killed...")
+    print("Managing to survive and become stong. To you, some people need to be killed in order for you to be alive...")
+    from pyfiglet import Figlet
+
+    fig = Figlet(font='graffiti')
+    banner = fig.renderText("MIX end")
+
+    print(banner)
+
 def goodend():
-    pass
+    print(" ")
+    print("You've spared the life of those with feelings for others. Even if it means killing your kind, you still saved others for doing so...")
+    print("You will be the one who will bring peace towards this dimension...")
+    from pyfiglet import Figlet
+
+    fig = Figlet(font='graffiti')
+    banner = fig.renderText("GOOD end")
+
+    print(banner)
 
 def end():
     global killpoint
     if killpoint == 7:
         badend()
-        pass
-    elif killpoint < 7:
+    else:
+            pass
+    if killpoint > 7:
         mixend()
-        pass
-    elif killpoint == 0:
+    else:
+            pass
+    if killpoint == 0:
         goodend()
-        pass
+    else:
+            pass
+        
 
 def k4():
     global killpoint
